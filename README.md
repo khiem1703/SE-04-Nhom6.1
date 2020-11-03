@@ -3,6 +3,7 @@
 ## Nguyễn Trung Thành
 ## Ngô Minh Thiên
 ## Trần Bá Khiêm 
+## Trần Ngọc Ánh
 ### Trưởng nhóm: Trần Bá Khiêm
 
 ## ĐỀ Tài Xây dựng dữ liệu cho TMĐT, viết các report trình bày lại kiến trúc của ứng dụng
