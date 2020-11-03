@@ -18,7 +18,7 @@
 ## 2.Giao diện
 * Màu sắc chủ đạo của website dễ nhìn hài hòa
 * Các quảng cáo và menu có kích cỡ phù hợp, cân đối.
-* Hình ảnh của sản phẩm cần rõ ràng, thông tin cơ bản đầy đủ.
+* Hình ảnh của sản phẩm cần rõ ràng, có thông tin chi tiết của từng sản phẩm
 ## 3.
 * khách hàng dễ dàng xem giỏ hàng ,thêm sửa xóa
 * Chủ web dễ dàng trong việc quản lý trang web
@@ -29,6 +29,7 @@
 * MySQL
 
 ### b) Công nghệ
+* Xampp
 * Ngôn ngữ lập trình: PHP
 * Framework: Laravel
 
