@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $table ="product";
-
-    public function product_type(){
-    	return $this->belongsTo('App\ProductType','id_type','id');
+    protected $table = "products";
+    public function  product_type(){
+        // đường dẫn đến thư model / khóa ngoại / khóa chính của model
+        return $this->belongsTo('App\ProductType','id_type','id');
     }
     public function bill_detail(){
-    	return $this->hasMany('App\BillDetail','id_product','id');
+        return $this->hasMany('App\BillDetail','id_product','id');
     }
 }
