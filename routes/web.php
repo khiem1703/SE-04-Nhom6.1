@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('welcome');
 });
 
-// Route::get('/index',[
-//     'as'=>'trang-chu',
-//     'uses'=>'PageController@getIndex()'
-// ]);
-Route::get('index', function () {
-    return view('master');
-});
+Route::get('index',[
+	'as'=>'trang-chu',
+	'uses' => 'PageController@getIndex'
+]);
