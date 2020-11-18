@@ -18,7 +18,8 @@ class PageController extends Controller
         $new_product = Product::where('new', 1)->paginate(4); // truyen so phan tu tren 1 trang vao paginate
         // print_r($new_product);
         // exit;
-    	return view('page.trangchu',compact('slide','new_product'));
+        $sanpham_khuyenmai = Product::where('promotion_price','<>',0)->paginate(8);        
+    	return view('page.trangchu',compact('slide','new_product','sanpham_khuyenmai'));
     }
     public function getLoaiSp()
     {
