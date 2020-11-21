@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('index',[
-	'as'=>'trang-chu',
+	'as'=>'trangchu',
 	'uses' => 'PageController@getIndex'
 ]);
 Route::get('loai-san-pham',[

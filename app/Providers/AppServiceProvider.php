@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\ProductType ;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        $loai_sp = ProductType::all();
+        View::share('loai_sp', $loai_sp);
     }
 }
