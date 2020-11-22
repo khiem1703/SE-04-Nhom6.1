@@ -3,7 +3,7 @@
          <div class="container">
              <div class="pull-left auto-width-left">
                  <ul class="top-menu menu-beta l-inline">
-                     <li><a href=""><i class="fa fa-home"></i> 90-92 Lê Thị Riêng, Bến Thành, Quận 1</a></li>
+                     <li><a href=""><i class="fa fa-home"></i> số 234 Thanh Xuân Hà Nội Việt Nam</a></li>
                      <li><a href=""><i class="fa fa-phone"></i> 0163 296 7751</a></li>
                  </ul>
              </div>
@@ -94,7 +94,7 @@
                      <li><a href="">Sản phẩm</a>
                          <ul class="sub-menu">
                              @foreach($loai_sp as $loai)
-                             <li><a href="{{URL::route('loaisanpham')}}">{{$loai->name}}</a></li>
+                             <li><a href="{{URL::route('loaisanpham',$loai->id)}}">{{$loai->name}}</a></li>
                              @endforeach
                          </ul>
                      </li>
