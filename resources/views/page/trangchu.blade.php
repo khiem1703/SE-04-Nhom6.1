@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="beta-products-list">
-						<h4>New Products</h4>
+						<h4>Sản phẩm mới</h4>
 						<div class="beta-products-details">
 							<p class="pull-left">{{count($new_product)}} styles found</p>
 							<div class="clearfix"></div>
@@ -49,7 +49,7 @@
 									</div>
 									@endif
 									<div class="single-item-header">
-										<a href="product.html"><img height="250px" src="source/image/product/{{$new->image}}" alt=""></a>
+										<a href="{{URL::route('chitietsanpham',$new->id)}}"><img height="250px" src="source/image/product/{{$new->image}}" alt=""></a>
 									</div>
 									<div class="single-item-body">
 										<p class="single-item-title">{{$new->name}}</p>

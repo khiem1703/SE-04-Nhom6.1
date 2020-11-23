@@ -33,9 +33,11 @@ class PageController extends Controller
         $tenloaisp = ProductType::where('id',$type)->first();
         return view('page.loai_sanpham',compact('sp_theoloai','sp_khac','loai','tenloaisp'));
     }
-    public function getChitiet()
+    public function getChitiet($id)
     {
-        return view('page.chitet_sanpham');
+        $sanpham=Product::where('id',$id)->first();
+        $sp_tuongtu=Product::where('id_type',$sanpham->id_type)->paginate(3);
+        return view('page.chitet_sanpham',compact('sanpham','sp_tuongtu'));
     }
     public function getLienHe()
     {
