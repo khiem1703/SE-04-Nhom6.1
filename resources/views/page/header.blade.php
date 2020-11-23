@@ -91,7 +91,7 @@
              <nav class="main-menu">
                  <ul class="l-inline ov">
                      <li><a href="{{URL::route('trangchu')}}">Trang chủ</a></li>
-                     <li><a href="">Sản phẩm</a>
+                     <li><a href="{{URL::route('trangchu')}}">Sản phẩm</a>
                          <ul class="sub-menu">
                              @foreach($loai_sp as $loai)
                              <li><a href="{{URL::route('loaisanpham',$loai->id)}}">{{$loai->name}}</a></li>

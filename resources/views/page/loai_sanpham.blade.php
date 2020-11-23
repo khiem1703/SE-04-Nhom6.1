@@ -44,7 +44,7 @@
 									</div>
 									@endif
 									<div class="single-item-header">
-										<a href="product.html"><img height="250px" src="source/image/product/{{$sptl-> image}}" alt=""></a>
+										<a href="{{URL::route('chitietsanpham',$sptl->id)}}"><img height="250px" src="source/image/product/{{$sptl-> image}}" alt=""></a>
 									</div>
 									<div class="single-item-body">
 										<p class="single-item-title">{{$sptl->name}}</p>
