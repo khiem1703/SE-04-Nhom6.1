@@ -66,7 +66,7 @@ class PageController extends Controller
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->removeItem($id);
-        if(count($cart->items>0)){
+        if($cart->totalQty!=0){
             Session::put('cart', $cart);
         }
         else{
