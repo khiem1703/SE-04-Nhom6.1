@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bill;
+use App\BillDetail;
 use App\Cart;
 use App\Customor;
 use App\Slide;
@@ -83,7 +84,7 @@ class PageController extends Controller
     public function postCheckout(Request $req)
     {
         $cart = Session::get('cart');
-        dd($cart);
+        //dd($cart);
         $customer = new Customor();
         $customer->name =$req ->name;
         $customer->gender=$req->gender;
@@ -98,7 +99,20 @@ class PageController extends Controller
         $bill->date_order = date('Y-m-d');
         $bill->total =$cart->totalPrice;
         $bill->payment=$req->payment_method;
-        
+        $bill->note =$req->notes;
+        $bill->save();
+
+        foreach ($cart->items as $key => $value) {
+            $bill_detail = new BillDetail();
+            $bill_detail->id_bill = $bill->id;
+            $bill_detail->id_product=$key;
+            $bill_detail->quantity=$value['qty'];
+            $bill_detail->unit_price =($value['price']/$value['qty']);
+            $bill_detail->save();
+
+        }
+        Session::forget('cart');
+        return redirect()->back()->with('thongbao','đặt hàng thành công');
     }
 
 }
