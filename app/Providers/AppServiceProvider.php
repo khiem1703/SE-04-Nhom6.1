@@ -25,8 +25,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        view()->composer('header',function($view){
+            $loai_sp = ProductType::all();
 
-        $loai_sp = ProductType::all();
-        View::share('loai_sp', $loai_sp);
+            $view->with('loai_sp',$loai_sp);
+
+        });
+        
+       // View::share('loai_sp', $loai_sp);
     }
 }
