@@ -114,5 +114,13 @@ class PageController extends Controller
         Session::forget('cart');
         return redirect()->back()->with('thongbao','đặt hàng thành công');
     }
+    public function getLogin()
+    {
+        return view('page.dang_nhap');
+    }
+    public function getSignin()
+    {
+        return view('page.dangky');
+    }
 
 }
