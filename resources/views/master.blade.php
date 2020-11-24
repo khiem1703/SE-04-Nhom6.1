@@ -20,12 +20,12 @@
 
 <body>
 
-   @include('page.header')
+   @include('header')
     <div class="rev-slider">
         @yield('content')  
     </div> <!-- .container -->
 
-    @include('page.footer')
+    @include('footer')
     <div class="copyright">
         <div class="container">
             <p class="pull-left">Privacy policy. (&copy;) 2014</p>
