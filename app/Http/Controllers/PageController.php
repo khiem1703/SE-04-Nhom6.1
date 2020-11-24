@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Bill;
 use App\Cart;
+use App\Customor;
 use App\Slide;
 use App\Product;
 use App\ProductType;
@@ -74,4 +76,29 @@ class PageController extends Controller
         }
         return redirect()->back();
     }
+    public function getCheckout()
+    {
+        return view('page.dat_hang');
+    }
+    public function postCheckout(Request $req)
+    {
+        $cart = Session::get('cart');
+        dd($cart);
+        $customer = new Customor();
+        $customer->name =$req ->name;
+        $customer->gender=$req->gender;
+        $customer->email=$req->email;
+        $customer->address=$req->address;
+        $customer->phone_number=$req->phone;
+        $customer->note=$req->notes;
+        $customer->save();
+
+        $bill = new Bill();
+        $bill->id_customer = $customer->id;
+        $bill->date_order = date('Y-m-d');
+        $bill->total =$cart->totalPrice;
+        $bill->payment=$req->payment_method;
+        
+    }
+
 }
