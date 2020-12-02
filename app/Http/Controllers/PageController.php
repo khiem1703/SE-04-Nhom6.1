@@ -9,9 +9,9 @@ use App\Customor;
 use App\Slide;
 use App\Product;
 use App\ProductType;
-
-
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
 class PageController extends Controller
@@ -121,6 +121,36 @@ class PageController extends Controller
     public function getSignin()
     {
         return view('page.dangky');
+    }
+    public function postSignin(Request $req)
+    {
+        $this->validate($req,
+            [
+                'email'=>'required|email|unique:users,email',
+                'password'=>'required|min:6|max:20',
+                'fullname'=>'required',
+                're_password'=>'required:same:password'
+            ],
+            [
+                'email.required'=>'Vui lòng nhập dạng email',
+                'email.email'=>'Không đúng định dạng email',
+                'password.required'=>'vui nhập đúng mật khẩu',
+                're_password.same'=>'Mật khẩu không giống nhau',
+                'password.min'=>'mật khẩu ít nhất có 6 ký tự',
+                'password.max'=>'mật khẩu ít nhất có 6 ký tự'
+
+
+            ]);
+
+            $user = new User();
+            $user->full_name= $req->fullname;
+            $user->email= $req->email;
+            $user->password= Hash::make($req->password);
+            $user->phone= $req->phone;
+            $user->address= $req->address;
+            $user->save();
+            return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
+           
     }
 
 }
