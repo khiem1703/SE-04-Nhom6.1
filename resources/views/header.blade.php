@@ -9,9 +9,14 @@
              </div>
              <div class="pull-right auto-width-right">
                  <ul class="top-details menu-beta l-inline">
-                     <li><a href="#"><i class="fa fa-user"></i>Tài khoản</a></li>
+                     @if(Auth::check())
+                     <li><a href="#"><i class="fa fa-user"></i>xin chào bạn {{Auth::user()->full_name}}</a></li>
+                     <li><a href="{{route('logout')}}"><i class="fa fa-user"></i>Logout</a></li>
+
+                     @else
                      <li><a href="{{route('signin')}}">Đăng kí</a></li>
                      <li><a href="{{route('login')}}">Đăng nhập</a></li>
+                     @endif
                  </ul>
              </div>
              <div class="clearfix"></div>
@@ -32,16 +37,15 @@
                  </div>
 
                  <div class="beta-comp">
-                    @if(Session::has('cart'))
+                     @if(Session::has('cart'))
                      <div class="cart">
                          <div class="beta-select"><i class="fa fa-shopping-cart"></i> Giỏ hàng {{Session('cart')->totalQty}} <i class="fa fa-chevron-down"></i></div>
                          <div class="beta-dropdown cart-body">
-                            @foreach($product_cart as $product)
+                             @foreach($product_cart as $product)
                              <div class="cart-item">
-                                 <a class ="cart-item-delete"
-                                  href="{{route('xoagiohang',$product['item']['id'])}}">
-                                  <i class ="fa fa-times"></i>
-                                </a>
+                                 <a class="cart-item-delete" href="{{route('xoagiohang',$product['item']['id'])}}">
+                                     <i class="fa fa-times"></i>
+                                 </a>
                                  <div class="media">
                                      <a class="pull-left" href="#">
                                          <img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
@@ -57,7 +61,7 @@
 
                              <div class="cart-caption">
                                  <div class="cart-total text-right">Tổng tiền:
-                                      <span class="cart-total-value">{{Session('cart')->totalPrice}}</span></div>
+                                     <span class="cart-total-value">{{Session('cart')->totalPrice}}</span></div>
                                  <div class="clearfix"></div>
 
                                  <div class="center">
@@ -67,7 +71,7 @@
                              </div>
                          </div>
                      </div> <!-- .cart -->
-                    @endif
+                     @endif
                  </div>
              </div>
              <div class="clearfix"></div>

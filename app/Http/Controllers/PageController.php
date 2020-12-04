@@ -177,5 +177,10 @@ class PageController extends Controller
                 return redirect()->back()->with(['flag'=>'sucess','message'=>'Vui lòng kiểm tra lại mật khẩu và tài khoản']);
             }
     }
+    public function getLogout()
+    {
+        Auth::logout();
+        return redirect()->route('trangchu');
+    }
 
 }

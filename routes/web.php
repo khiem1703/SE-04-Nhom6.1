@@ -72,3 +72,7 @@ Route::post('dang-ky', [
 	'as' => 'signin',
 	'uses' => 'PageController@postSignin'
 ]);
+Route::get('dang-xuat', [
+	'as' => 'logout',
+	'uses' => 'PageController@getLogout'
+]);
