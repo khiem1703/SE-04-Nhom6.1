@@ -64,3 +64,7 @@ Route::get('dang-ky', [
 	'as' => 'signin',
 	'uses' => 'PageController@getSignin'
 ]);
+Route::post('dang-ky', [
+	'as' => 'signin',
+	'uses' => 'PageController@postSignin'
+]);
