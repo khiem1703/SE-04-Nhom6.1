@@ -60,6 +60,10 @@ Route::get('dang-nhap', [
 	'as' => 'login',
 	'uses' => 'PageController@getLogin'
 ]);
+Route::post('dang-nhap', [
+	'as' => 'login',
+	'uses' => 'PageController@postLogin'
+]);
 Route::get('dang-ky', [
 	'as' => 'signin',
 	'uses' => 'PageController@getSignin'

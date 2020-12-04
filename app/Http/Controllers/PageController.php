@@ -11,6 +11,7 @@ use App\Product;
 use App\ProductType;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
@@ -137,7 +138,7 @@ class PageController extends Controller
                 'password.required'=>'vui nhập đúng mật khẩu',
                 're_password.same'=>'Mật khẩu không giống nhau',
                 'password.min'=>'mật khẩu ít nhất có 6 ký tự',
-                'password.max'=>'mật khẩu ít nhất có 6 ký tự'
+                'password.max'=>'mật khẩu nhiều nhất có 20 ký tự'
 
 
             ]);
@@ -151,6 +152,30 @@ class PageController extends Controller
             $user->save();
             return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
            
+    }
+    public function postLogin(Request $req){
+        $this->validate($req,
+            [
+                'email'=>'required|email',
+                'password'=>'required|min:6|max:20'
+            ],
+            [
+                'email.required'=>'Vui lòng nhập dạng email',
+                'email.email'=>'Không đúng định dạng email',
+                'password.required'=>'vui nhập đúng mật khẩu',
+                'password.min'=>'mật khẩu ít nhất có 6 ký tự',
+                'password.max'=>'mật khẩu nhiều nhất có 20 ký tự'
+
+            ]
+            );
+            $credentials= array('email'=>$req->email,'password'=>$req->password);
+            if(Auth::attempt($credentials))
+            {
+                return redirect()->back()->with(['flag'=>'sucess','message'=>'Đăng nhập thành công']);
+            }
+            else{
+                return redirect()->back()->with(['flag'=>'sucess','message'=>'Vui lòng kiểm tra lại mật khẩu và tài khoản']);
+            }
     }
 
 }
