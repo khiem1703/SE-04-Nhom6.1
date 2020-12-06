@@ -76,3 +76,7 @@ Route::get('dang-xuat', [
 	'as' => 'logout',
 	'uses' => 'PageController@getLogout'
 ]);
+Route::get('search', [
+	'as' => 'search',
+	'uses' => 'PageController@getSearch'
+]);
