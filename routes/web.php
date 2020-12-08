@@ -80,3 +80,7 @@ Route::get('search', [
 	'as' => 'search',
 	'uses' => 'PageController@getSearch'
 ]);
+
+
+// admin
+Route::get('/admin','AdminController@index');
