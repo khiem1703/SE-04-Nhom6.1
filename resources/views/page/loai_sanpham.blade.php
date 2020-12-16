@@ -22,8 +22,8 @@
 				<div class="col-sm-3">
 					<ul class="aside-menu">
 						@foreach($loai as $loai)
-						<li><a href="{{URL::route('loaisanpham',$loai->id)}}">{{$loai->name}}</a></li>	
-						@endforeach					
+						<li><a href="{{URL::route('loaisanpham',$loai->id)}}">{{$loai->name}}</a></li>
+						@endforeach
 					</ul>
 				</div>
 				<div class="col-sm-9">
@@ -60,7 +60,7 @@
 									</div>
 									<div class="single-item-caption">
 										<a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-										<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+										<a class="beta-btn primary" href="{{URL::route('chitietsanpham',$new->id)}}">Details <i class="fa fa-chevron-right"></i></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>

@@ -7,7 +7,7 @@
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb">
-                <a href="index.html">Home</a> / <span>Đăng kí</span>
+                <a href="{{URL::route('trangchu')}}">Home</a> / <span>Đăng kí</span>
             </div>
         </div>
         <div class="clearfix"></div>

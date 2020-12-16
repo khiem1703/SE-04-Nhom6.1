@@ -32,11 +32,11 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="beta-products-list">
-						<h4>Sản phẩm mới</h4>
-						<div class="beta-products-details">
+						<h4>Sản phẩm mới ({{count($new_product)}})</h4>
+						<!-- <div class="beta-products-details">
 							<p class="pull-left">{{count($new_product)}} styles found</p>
 							<div class="clearfix"></div>
-						</div>
+						</div> -->
 
 						<div class="row">
 							@foreach($new_product as $new)
@@ -79,11 +79,11 @@
 					<div class="space50">&nbsp;</div>
 
 					<div class="beta-products-list">
-						<h4>Sản phẩm khuyến mãi</h4>
-						<div class="beta-products-details">
+						<h4>Sản phẩm khuyến mãi ({{count($sanpham_khuyenmai)}})</h4>
+						<!-- <div class="beta-products-details">
 							<p class="pull-left">{{count($sanpham_khuyenmai)}}</p>
 							<div class="clearfix"></div>
-						</div>
+						</div> -->
 						<div class="row">
 							@foreach($sanpham_khuyenmai as $spkm)
 							<div class="col-sm-3">

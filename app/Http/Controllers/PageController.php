@@ -14,6 +14,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Carbon;
+
 
 class PageController extends Controller
 {
@@ -45,7 +47,11 @@ class PageController extends Controller
     {
         $sanpham = Product::where('id', $id)->first();
         $sp_tuongtu = Product::where('id_type', $sanpham->id_type)->paginate(3);
-        return view('page.chitet_sanpham', compact('sanpham', 'sp_tuongtu'));
+        $sanpham_khuyenmai = Product::where('promotion_price', '<>', 0)->paginate(4);
+        ///////////////
+        $month = 10;
+        $sp_new = Product::whereMonth('created_at', $month)->paginate(4);
+        return view('page.chitet_sanpham', compact('sanpham', 'sp_tuongtu', 'sanpham_khuyenmai','sp_new'));
     }
     public function getLienHe()
     {
