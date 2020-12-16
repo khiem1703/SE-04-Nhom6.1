@@ -33,17 +33,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<div class="log-w3">
 		<div class="w3layouts-main">
-			<h2>Sign In Now</h2>
+			<h2>Đăng nhập ngay</h2>
 			<form action="{{URL::to('/admin_login')}}" method="post">
-				{{csrf_field()}}
+				<input type="hidden" name="_token" value="{{csrf_token()}}">
 				<input type="email" class="ggg" name="admin_email" placeholder="E-MAIL" required="">
 				<input type="password" class="ggg" name="admin_password" placeholder="PASSWORD" required="">
 				<span><input type="checkbox" />Remember Me</span>
-				<h6><a href="#">Forgot Password?</a></h6>
+				<h6><a href="#">quên mật khẩu</a></h6>
 				<div class="clearfix"></div>
 				<input type="submit" value="Sign In" name="login">
 			</form>
-			<p>Don't Have an Account ?<a href="registration.html">Create an account</a></p>
+			<p>Bạn chưa có tài khoản<a href="registration.html">Đăng ký ngay</a></p>
 		</div>
 	</div>
 	<script src="admintheme/js/bootstrap.js"></script>
@@ -51,7 +51,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="admintheme/js/scripts.js"></script>
 	<script src="admintheme/js/jquery.slimscroll.js"></script>
 	<script src="admintheme/js/jquery.nicescroll.js"></script>
-	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 	<script src="jadmintheme/s/jquery.scrollTo.js"></script>
 </body>
 
