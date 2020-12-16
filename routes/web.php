@@ -21,6 +21,12 @@ Route::get('index',[
 	'as'=>'trangchu',
 	'uses' => 'PageController@getIndex'
 ]);
+
+Route::get('san-pham', [
+	'as' => 'sanpham',
+	'uses' => 'PageController@getIndex'
+]);
+
 Route::get('loai-san-pham/{type}',[
 	'as'=>'loaisanpham',
 	'uses'=>'PageController@getLoaiSp'
