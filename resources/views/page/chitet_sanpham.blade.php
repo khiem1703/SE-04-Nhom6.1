@@ -104,7 +104,7 @@
 						<div class="col-sm-4">
 							<div class="single-item">
 								<div class="single-item-header">
-									<a href="product.html"><img src="source/image/product/{{$sp->image}}" alt=""></a>
+									<a href="{{URL::route('chitietsanpham',$sp->id)}}"><img height="250px"  src="source/image/product/{{$sp->image}}" alt=""></a>
 								</div>
 								<div class="single-item-body">
 									<p class="single-item-title">{{$sp->name}}</p>
@@ -119,8 +119,8 @@
 									</p>
 								</div>
 								<div class="single-item-caption">
-									<a class="add-to-cart pull-left" href="product.html"><i class="fa fa-shopping-cart"></i></a>
-									<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+									<a class="add-to-cart pull-left" href="{{URL::route('chitietsanpham',$sp->id)}}"><i class="fa fa-shopping-cart"></i></a>
+									<a class="beta-btn primary" href="{{URL::route('chitietsanpham',$sp->id)}}">Details <i class="fa fa-chevron-right"></i></a>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -136,6 +136,8 @@
 					<h3 class="widget-title">Sản phẩm bán chạy</h3>
 					<div class="widget-body">
 						<div class="beta-sales beta-lists">
+
+						
 							<div class="media beta-sales-item">
 								<a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/1.png" alt=""></a>
 								<div class="media-body">

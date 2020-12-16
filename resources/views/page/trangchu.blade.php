@@ -64,10 +64,9 @@
 										</p>
 									</div>
 									<div class="single-item-caption">
-										<a class="add-to-cart pull-left" 
-										href="{{route('themgiohang',$new->id)}}">
+										<a class="add-to-cart pull-left" href="{{route('themgiohang',$new->id)}}">
 											<i class="fa fa-shopping-cart"></i></a>
-										<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+										<a class="beta-btn primary" href="{{URL::route('chitietsanpham',$new->id)}}">Details <i class="fa fa-chevron-right"></i></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -86,7 +85,7 @@
 							<div class="clearfix"></div>
 						</div>
 						<div class="row">
-						@foreach($sanpham_khuyenmai as $spkm)
+							@foreach($sanpham_khuyenmai as $spkm)
 							<div class="col-sm-3">
 
 								<div class="single-item" style="  margin: 20px">
@@ -96,7 +95,7 @@
 									</div>
 									@endif
 									<div class="single-item-header">
-										<a href="product.html"><img height="250px" src="source/image/product/{{$spkm->image}}" alt=""></a>
+										<a href="{{URL::route('chitietsanpham',$spkm->id)}}"><img height="250px" src="source/image/product/{{$spkm->image}}" alt=""></a>
 									</div>
 									<div class="single-item-body">
 										<p class="single-item-title">{{$new->name}}</p>
@@ -112,16 +111,16 @@
 									</div>
 									<div class="single-item-caption">
 										<a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-										<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+										<a class="beta-btn primary" href="{{URL::route('chitietsanpham',$spkm->id)}}">Details <i class="fa fa-chevron-right"></i></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
 							</div>
-						@endforeach
-							
+							@endforeach
+
 						</div>
 						<div class='row'>{{$sanpham_khuyenmai->links()}}</div>
-						
+
 					</div> <!-- .beta-products-list -->
 				</div>
 			</div> <!-- end section with sidebar and main content -->
@@ -129,7 +128,7 @@
 
 		</div> <!-- .main-content -->
 	</div> <!-- #content -->
-	
+
 </div> <!-- #content -->
 
 @endsection

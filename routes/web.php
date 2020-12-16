@@ -84,3 +84,6 @@ Route::get('search', [
 
 // admin
 Route::get('/admin','AdminController@index');
+// Route::get('/adminhome', 'AdminController@adminhome');
+Route::get('admin_home', ['as' => 'admin_home', 'uses' => 'AdminController@admin_home']);
+Route::post('admin_login', ['as' => 'login', 'uses' => 'AdminController@admin_login']);
