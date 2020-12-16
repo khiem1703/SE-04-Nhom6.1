@@ -3,11 +3,11 @@
     <div class="inner-header">
         <div class="container">
             <div class="pull-left">
-                <h6 class="inner-title">Contacts</h6>
+                <h6 class="inner-title">Liên hệ</h6>
             </div>
             <div class="pull-right">
                 <div class="beta-breadcrumb font-large">
-                    <a href="index.html">Home</a> / <span>Contacts</span>
+                    <a href="index.html">Trang chủ</a> / <span>Liên hệ</span>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -15,7 +15,7 @@
     </div>
     <div class="beta-map">
 
-        <div class="abs-fullwidth beta-map wow flipInX"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3678.0141923553406!2d89.551518!3d22.801938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff8ff8ef7ea2b7%3A0x1f1e9fc1cf4bd626!2sPranon+Pvt.+Limited!5e0!3m2!1sen!2s!4v1407828576904"></iframe></div>
+        <div class="abs-fullwidth beta-map wow flipInX"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9192895759315!2d105.80578851493208!3d20.99587218601613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acbf0df2c0e5%3A0xd740a66998e1a0ed!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCDEkOG6oWkgaOG7jWMgUXXhu5FjIGdpYSBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1608110349127!5m2!1svi!2s" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
     </div>
     <div class="container">
         <div id="content" class="space-top-none">
@@ -64,9 +64,14 @@
                         0123456789 <br>
                     </p>
                     <div class="space20">&nbsp;</div>
+                    <h6 class="contact-title">Fanpage</h6>
+                    <p>
+                        0123456789 <br>
+                    </p>
+                    <div class="space20">&nbsp;</div>
                     <h6 class="contact-title">Email</h6>
                     <p>
-                        <a href="hr@betadesign.com">BACake@gmail.com</a>
+                        <a href="BACake@gmail.com">BACake@gmail.com</a>
                     </p>
                 </div>
             </div>
