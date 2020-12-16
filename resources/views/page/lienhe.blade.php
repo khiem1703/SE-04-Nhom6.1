@@ -7,11 +7,7 @@
             </div>
             <div class="pull-right">
                 <div class="beta-breadcrumb font-large">
-<<<<<<< HEAD
                     <a href="{{URL::route('trangchu')}}">Home</a> / <span>Contacts</span>
-=======
-                    <a href="index.html">Trang chủ</a> / <span>Liên hệ</span>
->>>>>>> LienHe
                 </div>
             </div>
             <div class="clearfix"></div>
