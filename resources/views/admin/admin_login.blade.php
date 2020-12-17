@@ -24,7 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- font CSS -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<!-- font-awesome icons -->
-	<link rel="stylesheet" href="css/font.css" type="text/css" />
+	<link rel="stylesheet" href="admintheme/css/font.css" type="text/css" />
 	<link href="admintheme/css/font-awesome.css" rel="stylesheet">
 	<!-- //font-awesome icons -->
 	<script src="admintheme/js/jquery2.0.3.min.js"></script>
@@ -33,7 +33,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<div class="log-w3">
 		<div class="w3layouts-main">
-			<h2>Đăng nhập ngay</h2>
+			<h2>Đăng nhập</h2>
+			<?php
+
+			use Illuminate\Support\Facades\Session;
+			$message = Session::get('message');
+			if($message){
+				echo '<span class = "text-alert" > ',$message,'</span> ';
+				Session::put('message',null);
+			}
+			?>
+
 			<form action="{{URL::to('/admin_login')}}" method="post">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
 				<input type="email" class="ggg" name="admin_email" placeholder="E-MAIL" required="">
@@ -51,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="admintheme/js/scripts.js"></script>
 	<script src="admintheme/js/jquery.slimscroll.js"></script>
 	<script src="admintheme/js/jquery.nicescroll.js"></script>
-	<script src="jadmintheme/s/jquery.scrollTo.js"></script>
+	<script src="admintheme/js/jquery.scrollTo.js"></script>
 </body>
 
 </html>

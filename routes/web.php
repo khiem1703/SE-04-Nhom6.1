@@ -92,3 +92,7 @@ Route::get('search', [
 Route::get('/admin_login','AdminController@getAdminLogin');
 Route::get('/admin_home', ['as' => 'admin_home', 'uses' => 'AdminController@admin_home']);
 Route::post('/admin_login', ['as' => 'login', 'uses' => 'AdminController@postAdminLogin']);
+Route::post('/logout', ['as' => 'logout', 'uses' => 'AdminController@logout']);
+
+Route::get('/add-category-product', ['as' => 'add-category-product', 'uses' => 'CategoryProduct@add_category_product']);
+Route::get('/all-category-product', ['as' => 'all-category-product', 'uses' => 'CategoryProduct@all_category_product']);
