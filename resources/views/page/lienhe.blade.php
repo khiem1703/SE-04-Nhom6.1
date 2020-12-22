@@ -64,15 +64,19 @@
                         0123456789 <br>
                     </p>
                     <div class="space20">&nbsp;</div>
-                    <h6 class="contact-title">Fanpage</h6>
-                    <p>
-                        0123456789 <br>
-                    </p>
-                    <div class="space20">&nbsp;</div>
                     <h6 class="contact-title">Email</h6>
                     <p>
                         <a href="BACake@gmail.com">BACake@gmail.com</a>
                     </p>
+                    <div class="space20">&nbsp;</div>
+                    <h6 class="contact-title">Fanpage</h6>
+                    <p>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0" nonce="hkQQpaUA"></script>
+
+                        <div class="fb-page" data-href="https://www.facebook.com/Bakers-Allfy-Cake-Co-101681968522508" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Bakers-Allfy-Cake-Co-101681968522508" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Bakers-Allfy-Cake-Co-101681968522508">Baker&#039;s Allfy Cake Co.</a></blockquote></div>
+                    </p>
+                    
                 </div>
             </div>
         </div> <!-- #content -->
