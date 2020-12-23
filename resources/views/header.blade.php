@@ -68,7 +68,7 @@
 
                                  <div class="center">
                                      <div class="space10">&nbsp;</div>
-                                     <a href="checkout.html" class="beta-btn primary text-center">Đặt hàng <i class="fa fa-chevron-right"></i></a>
+                                     <a href="{{route('dathang')}}" class="beta-btn primary text-center">Đặt hàng <i class="fa fa-chevron-right"></i></a>
                                  </div>
                              </div>
                          </div>
@@ -85,8 +85,8 @@
              <div class="visible-xs clearfix"></div>
              <nav class="main-menu">
                  <ul class="l-inline ov">
-                      <li><a href="{{URL::route('trangchu')}}">Trang chủ</a></li>
-                      
+                     <li><a href="{{URL::route('trangchu')}}">Trang chủ</a></li>
+
                      <li><a href="{{URL::route('sanpham')}}">Sản phẩm</a>
                          <ul class="sub-menu">
                              @foreach($loai_sp as $loai)

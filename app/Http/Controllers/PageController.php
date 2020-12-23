@@ -86,12 +86,14 @@ class PageController extends Controller
     }
     public function getCheckout()
     {
+
         return view('page.dat_hang');
     }
     public function postCheckout(Request $req)
     {
         $cart = Session::get('cart');
         //dd($cart);
+        // echo ($cart);
         $customer = new Customor();
         $customer->name =$req ->name;
         $customer->gender=$req->gender;

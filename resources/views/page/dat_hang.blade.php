@@ -7,7 +7,7 @@
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb">
-                <a href="index.html">Trang chủ</a> / <span>Đặt hàng</span>
+                <a href="{{URL::route('trangchu')}}">Trang chủ</a> / <span>Đặt hàng</span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -17,7 +17,7 @@
     <div id="content">
 
         <form action="{{route('dathang')}}" method="post" class="beta-form-checkout">
-            <input type ="hidden" name="_token" value="{{csrf_token()}}">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="row">@if(Session::has('thongbao')){{Session::get('thongbao')}}@endif</div>
             <div class="row">
                 <div class="col-sm-6">
@@ -37,43 +37,57 @@
 
                     <div class="form-block">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name ="email"  required placeholder="expample@gmail.com">
+                        <input type="email" id="email" name="email" required placeholder="expample@gmail.com">
                     </div>
 
                     <div class="form-block">
                         <label for="adress">Địa chỉ*</label>
-                        <input type="text" id="address" name ="address" placeholder="Street Address" required>
+                        <input type="text" id="address" name="address" placeholder="Street Address" required>
                     </div>
 
 
                     <div class="form-block">
                         <label for="phone">Điện thoại*</label>
-                        <input type="text" id="phone" name ="phone" required>
+                        <input type="text" id="phone" name="phone" required>
                     </div>
 
                     <div class="form-block">
                         <label for="notes">Ghi chú</label>
-                        <textarea id="notes" name ="notes"></textarea>
+                        <textarea id="notes" name="notes"></textarea>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="your-order">
                         <div class="your-order-head">
-                            <h5>Đơn hàng của bạn</h5>
+                            <h5>Đơn hàng của bạn @if(Session('cart') != null) ({{Session('cart')->totalQty}}) </h5>
                         </div>
                         <div class="your-order-body" style="padding: 0px 10px">
                             <div class="your-order-item">
                                 <div>
+
                                     <!--  one item	 -->
-                                    <div class="media">
-                                        <img width="25%" src="assets/dest/images/shoping1.jpg" alt="" class="pull-left">
-                                        <div class="media-body">
-                                            <p class="font-large">Men's Belt</p>
-                                            <span class="color-gray your-order-info">Color: Red</span>
-                                            <span class="color-gray your-order-info">Size: M</span>
-                                            <span class="color-gray your-order-info">Qty: 1</span>
+                                    @foreach(Session::get('cart')->items as $product)
+
+                                    <div class="cart-item">
+
+                                        <a class="cart-item-delete" href="{{route('xoagiohang',$product['item']['id'])}}">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+
+
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
+                                            <div class="media-body">
+                                                <span class="cart-item-title">{{$product['item']['name']}}</span>
+                                                <span class="cart-item-options">Size: XS; Colar: Navy</span>
+                                                <span class="cart-item-amount">{{$product['qty']}}*<span>{{$product['item']['unit_price']}}</span></span>
+                                            </div>
                                         </div>
+
                                     </div>
+                                    @endforeach
+                                    @endif
                                     <!-- end one item -->
                                 </div>
                                 <div class="clearfix"></div>
@@ -83,13 +97,17 @@
                                     <p class="your-order-f18">Tổng tiền:</p>
                                 </div>
                                 <div class="pull-right">
-                                    <h5 class="color-black">$235.00</h5>
+                                    <h5 class="color-black">
+                                        @if(Session('cart') != null) {{ number_format(Session('cart')->totalPrice)}} @else 0 @endif VND
+                                    </h5>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                         </div>
+
                         <div class="your-order-head">
-                            <h5>Hình thức thanh toán</h5>
+
+                            <h5 style="margin: 10px">Hình thức thanh toán</h5>
                         </div>
 
                         <div class="your-order-body">
@@ -116,8 +134,8 @@
                             </ul>
                         </div>
 
-                        <div class="text-center"><button type="submit"  class="beta-btn primary" href="#">
-                            Đặt hàng <i class="fa fa-chevron-right"></i></button></div>
+                        <div class="text-center"><button type="submit" class="beta-btn primary" href="#">
+                                Đặt hàng <i class="fa fa-chevron-right"></i></button></div>
                     </div> <!-- .your-order -->
                 </div>
             </div>
