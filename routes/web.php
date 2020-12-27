@@ -96,3 +96,4 @@ Route::post('/logout', ['as' => 'logout', 'uses' => 'AdminController@logout']);
 
 Route::get('/add-category-product', ['as' => 'add-category-product', 'uses' => 'CategoryProduct@add_category_product']);
 Route::get('/all-category-product', ['as' => 'all-category-product', 'uses' => 'CategoryProduct@all_category_product']);
+Route::post('/save-category-product', ['as' => 'save-category-product', 'uses' => 'CategoryProduct@save_category_product']);
