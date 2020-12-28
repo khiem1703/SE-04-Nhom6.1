@@ -28,6 +28,11 @@
                         </div>
                     </div>
                 </div>
+                @if(Session::get('alert'))
+                <div class="alart alart-success">
+                    {{Session::get('alert')}}
+                </div>
+                @endif
                 <div class="table-responsive">
                     <table class="table table-striped b-t b-light">
                         <thead>
@@ -53,7 +58,7 @@
                                 <td><span class="text-ellipsis">{{$categorys->created_at }}</span></td>
                                 <td><span class="text-ellipsis">{{$categorys->updated_at }}</span></td>
                                 <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <a href="{{URL::route('upda-category?id=',$categorys->id)}}" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td>
@@ -75,7 +80,7 @@
                         <div class="col-sm-5 text-center">
                             <small class="text-muted inline m-t-sm m-b-sm">tổng số danh mục sản phẩm ({{count($all_category)}})</small>
                         </div>
-                        <div class="col-sm-7 text-right text-center-xs">
+                        <div class=" col-sm-7 text-right text-center-xs">
                             {{$all_category->links()}}
                         </div>
                     </div>

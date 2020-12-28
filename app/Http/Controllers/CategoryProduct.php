@@ -40,6 +40,8 @@ class CategoryProduct extends Controller
         Session::put('message', 'add successful');
         return Redirect::to('add-category-product');
     }
+
+    
     public function get_update_category(){
     //    $category = ProductType::find($id);
         
@@ -76,18 +78,18 @@ class CategoryProduct extends Controller
         $updatecategory = DB::table('type_products')
         ->where('id', $id)
         ->update([
-            'name ' => $request->input('namecategory'),
-            'description ' => $request->input('description'),
-            'image ' => $request->input('imagecategory'),
-            'updated_at ' => $request->input($dt->toDateTimeString())
+            'name' => $request->input('namecategory'),
+            'description' => $request->input('description'),
+            // 'image ' => $request->input('imagecategory'),
+            'updated_at' => $dt->toDateTimeString()
             
         ]);
-        echo '<pre>';
-        print_r($dt->toDateTimeString());
-        echo '</pre>';
+        // echo '<pre>';
+        // print_r($request->imagecategory);
+        // echo '</pre>';
         //$category-> save();
-
-        return Redirect::to('admin.update_category')->with('thongbao','sua thanh cong');
+        $alert = "Successfully!";
+        return redirect()->route('all-category-product')->with('alert', $alert);
       
     }
 }

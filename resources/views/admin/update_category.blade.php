@@ -21,13 +21,9 @@
 
                             </div>
                             @endif
-                            @if(session('thongbao'))
-                            <div class="alart alart-success">
-                                {{session('thongbao')}}
-                            </div>
-                            @endif
+                           
                             <div class=" form">
-                                <form class="cmxform form-horizontal " id="commentForm" method="post" action="upda-category?id={{$category->id}}" novalidate="novalidate">
+                                <form class="cmxform form-horizontal " id="commentForm" method="post" action="upda-category?id={{$category->id}}" novalidate="novalidate" enctype="multipart/form-data">
                                     @csrf
 
                                     <div class="form-group ">
@@ -53,6 +49,7 @@
 
                                             <img style="margin-top: 20px" height="200px" width="200px" src="source/image/product/{{$category->image}} " alt="">
                                             <input class="form-control " style="margin-top: 20px" type="file" name="imagecategory" value="{{$category->image}}">
+                                            {{$category->image}}
                                         </div>
                                     </div>
                                     <div class="form-group">
