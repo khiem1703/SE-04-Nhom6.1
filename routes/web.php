@@ -108,5 +108,5 @@ Route::post('upda-category', [
 	'uses' => 'CategoryProduct@post_update_category'
 ]);
 
-//Route::post('/upda-category/{id}', 'CategoryProduct@post_update_category');
+Route::get('delete-category', 'CategoryProduct@get_delete_category');
 

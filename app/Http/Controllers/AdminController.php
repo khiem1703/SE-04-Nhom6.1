@@ -4,7 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Bill;
+use App\BillDetail;
+use App\Cart;
+use App\Customor;
+use App\Slide;
+use App\Product;
+use App\ProductType;
 use App\User;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
@@ -18,12 +26,18 @@ class AdminController extends Controller
 {
     public function getAdminLogin()
     {
+      
         return view('admin.admin_login');
     }
 
     public function admin_home()
     {
-        return view('admin.admin_dashboard');
+        $categorys = DB::table('type_products')->get();
+        $products = DB::table('products')->paginate(7);
+        $customers = DB::table('customer')->get();
+        $bills = DB::table('bills')->get();
+        $bill_detail = DB::table('bill_detail')->get();
+        return view('admin.admin_dashboard', compact('categorys', 'products', 'customers', 'bills', 'bill_detail'));
     }
 
     public function postAdminLogin(Request $req)

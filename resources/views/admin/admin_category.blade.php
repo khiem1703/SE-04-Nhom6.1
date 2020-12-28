@@ -33,6 +33,11 @@
                     {{Session::get('alert')}}
                 </div>
                 @endif
+                @if(Session::get('alertdelete'))
+                <div >
+                    {{Session::get('alertdelete')}}
+                </div>
+                @endif
                 <div class="table-responsive">
                     <table class="table table-striped b-t b-light">
                         <thead>
@@ -62,7 +67,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    <a href="{{URL::to('delete-category?id='.$categorys->id)}}" class="active" ui-toggle-class=""><i class="fa fa-trash-o" aria-hidden="true"></i>
                                     </a>
 
                                 <td>

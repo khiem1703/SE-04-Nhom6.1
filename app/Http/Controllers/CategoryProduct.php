@@ -96,4 +96,11 @@ class CategoryProduct extends Controller
         return redirect()->route('all-category-product')->with('alert', $alert);
       
     }
+    public function get_delete_category(){
+        $id = $_GET['id'];
+        $category = ProductType::find($id);
+        $category->delete();
+        $alertdelete = " delete Successfully!";
+        return redirect()->route('all-category-product')->with('alertdelete', $alertdelete);
+    }
 }

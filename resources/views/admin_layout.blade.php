@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <header class="header fixed-top clearfix">
             <!--logo start-->
             <div class="brand">
-                <a href="index.html" class="logo">
+                <a href="{{route('admin_home')}}" class="logo">
                     CAKE STORE
                 </a>
                 <div class="sidebar-toggle-box">
@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <!--logo end-->
-            
+
             <div class="top-nav clearfix">
                 <!--search & user info start-->
                 <ul class="nav pull-right top-menu">
@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </li>
                     <!-- user login dropdown start-->
                     <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="">
                             <img alt="" src="images/2.png">
                             <span class="username">John Doe</span>
                             <b class="caret"></b>
@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="leftside-navigation">
                     <ul class="sidebar-menu" id="nav-accordion">
                         <li>
-                            <a class="active" href="index.html">
+                            <a class="active" href="{{route('admin_home')}}">
                                 <i class="fa fa-dashboard"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -100,26 +100,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="{{URL::to('/all-category-product')}}">liệt kê danh mục sản phẩm</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="fontawesome.html">
-                                <i class="fa fa-bullhorn"></i>
-                                <span>Font awesome </span>
-                            </a>
-                        </li>
+
                         <li class="sub-menu">
                             <a href="javascript:;">
                                 <i class="fa fa-th"></i>
                                 <span>Data Tables</span>
                             </a>
                             <ul class="sub">
-                                <li><a href="basic_table.html">Basic Table</a></li>
-                                <li><a href="responsive_table.html">Responsive Table</a></li>
+                                <li><a href="basic_table.html">Categorys</a></li>
+                                <li><a href="responsive_table.html">Products</a></li>
+                                <li><a href="responsive_table.html">Users</a></li>
+                                <li><a href="responsive_table.html">Carts</a></li>
+
                             </ul>
                         </li>
                         <li class="sub-menu">
                             <a href="javascript:;">
                                 <i class="fa fa-tasks"></i>
-                                <span>Form Components</span>
+                                <span>Blog</span>
                             </a>
                             <ul class="sub">
                                 <li><a href="form_component.html">Form Elements</a></li>
@@ -137,16 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="mail_compose.html">Compose Mail</a></li>
                             </ul>
                         </li>
-                        <li class="sub-menu">
-                            <a href="javascript:;">
-                                <i class=" fa fa-bar-chart-o"></i>
-                                <span>Charts</span>
-                            </a>
-                            <ul class="sub">
-                                <li><a href="chartjs.html">Chart js</a></li>
-                                <li><a href="flot_chart.html">Flot Charts</a></li>
-                            </ul>
-                        </li>
+
                         <li class="sub-menu">
                             <a href="javascript:;">
                                 <i class=" fa fa-bar-chart-o"></i>
@@ -157,16 +146,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="vector_map.html">Vector Map</a></li>
                             </ul>
                         </li>
-                        <li class="sub-menu">
-                            <a href="javascript:;">
-                                <i class="fa fa-glass"></i>
-                                <span>Extra</span>
+                        <li>
+                            <a href="fontawesome.html">
+                                <i class="fa fa-bullhorn"></i>
+                                <span>Carts </span>
                             </a>
-                            <ul class="sub">
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="404.html">404 Error</a></li>
-                                <li><a href="registration.html">Registration</a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="login.html">
