@@ -21,9 +21,9 @@
 
                             </div>
                             @endif
-                           
+
                             <div class=" form">
-                                <form class="cmxform form-horizontal " id="commentForm" method="post" action="upda-category?id={{$category->id}}" novalidate="novalidate" enctype="multipart/form-data">
+                                <form class="cmxform form-horizontal " id="commentForm" method="post" action="{{URL::to('upda-category?id='.$category->id)}}" novalidate="novalidate" enctype="multipart/form-data">
                                     @csrf
 
                                     <div class="form-group ">

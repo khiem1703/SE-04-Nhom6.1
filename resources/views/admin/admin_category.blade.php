@@ -58,7 +58,7 @@
                                 <td><span class="text-ellipsis">{{$categorys->created_at }}</span></td>
                                 <td><span class="text-ellipsis">{{$categorys->updated_at }}</span></td>
                                 <td>
-                                    <a href="{{URL::route('upda-category?id=',$categorys->id)}}" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <a href="{{URL::to('upda-category?id='.$categorys->id)}}" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td>

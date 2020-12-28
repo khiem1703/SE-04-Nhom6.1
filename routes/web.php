@@ -107,3 +107,6 @@ Route::post('upda-category', [
 	'as' => 'upda-category',
 	'uses' => 'CategoryProduct@post_update_category'
 ]);
+
+//Route::post('/upda-category/{id}', 'CategoryProduct@post_update_category');
+

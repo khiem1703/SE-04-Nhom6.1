@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use App\ProductType;
 
+
 use Illuminate\Support\Facades\Redirect;
 
 class CategoryProduct extends Controller
@@ -41,9 +42,9 @@ class CategoryProduct extends Controller
         return Redirect::to('add-category-product');
     }
 
-    
+
     public function get_update_category(){
-    //    $category = ProductType::find($id);
+        //    $category = ProductType::find($id);
         
         
         $id = $_GET['id'];
@@ -53,11 +54,13 @@ class CategoryProduct extends Controller
         // echo '</pre>';
         return view('admin.update_category', compact('category'));
     }
-    public function post_update_category(Request $request)
+    public function post_update_category(Request $request )
     {
-        $id = $_GET['id'];
-        $category = DB::table('type_products')->where('id', $id)->first();
-      
+        
+         $id = $_GET['id'];
+        //$category = DB::table('type_products')->where('id', $id)->first();
+        $category = ProductType::find($id);
+        
         $this->validate($request,[
                 'namecategory'=> 'required|unique:type_products,name|min:3|max:100 '
         ],
@@ -68,26 +71,27 @@ class CategoryProduct extends Controller
                 'namecategory.max'=>'do dai ten toi thieu la 100'
 
         ]);
-        // $category->name= $request->namecategory;
-        // $category->description = $request->description;
-        // $category->image = $request->imagecategory;
+        $category->name= $request->namecategory;
+        $category->description = $request->description;
+        $category->image = $request->file('imagecategory');
         $dt = Carbon::now('Asia/Ho_Chi_Minh');
         
         //$category->updated_at  =$dt->toDateTimeString();
 
-        $updatecategory = DB::table('type_products')
-        ->where('id', $id)
-        ->update([
-            'name' => $request->input('namecategory'),
-            'description' => $request->input('description'),
-            // 'image ' => $request->input('imagecategory'),
-            'updated_at' => $dt->toDateTimeString()
+        // $updatecategory = DB::table('type_products')
+        // ->where('id', $id)
+        // ->update([
+        //     'name' => $request->input('namecategory'),
+        //     'description' => $request->input('description'),
+        //     // 'image ' => $request->input('imagecategory'),
+        //     'updated_at' => $dt->toDateTimeString()
             
-        ]);
+        // ]);
         // echo '<pre>';
         // print_r($request->imagecategory);
         // echo '</pre>';
-        //$category-> save();
+       
+        $category-> save();
         $alert = "Successfully!";
         return redirect()->route('all-category-product')->with('alert', $alert);
       
