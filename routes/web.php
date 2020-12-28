@@ -97,3 +97,13 @@ Route::post('/logout', ['as' => 'logout', 'uses' => 'AdminController@logout']);
 Route::get('/add-category-product', ['as' => 'add-category-product', 'uses' => 'CategoryProduct@add_category_product']);
 Route::get('/all-category-product', ['as' => 'all-category-product', 'uses' => 'CategoryProduct@all_category_product']);
 Route::post('/save-category-product', ['as' => 'save-category-product', 'uses' => 'CategoryProduct@save_category_product']);
+
+// Route::get('upda-category/{id}', [
+// 	'as' => 'upda-category',
+// 	'uses' => 'CategoryProduct@get_update_category'
+// ]);
+Route::get('upda-category', 'CategoryProduct@get_update_category')->name('update-category');
+Route::post('upda-category', [
+	'as' => 'upda-category',
+	'uses' => 'CategoryProduct@post_update_category'
+]);

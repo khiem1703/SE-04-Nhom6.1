@@ -32,90 +32,40 @@
                     <table class="table table-striped b-t b-light">
                         <thead>
                             <tr>
-                                <th style="width:20px;">
-                                    <label class="i-checks m-b-none">
-                                        <input type="checkbox"><i></i>
-                                    </label>
-                                </th>
-                                <th>Project</th>
-                                <th>Task</th>
-                                <th>Date</th>
-                                <th style="width:30px;"></th>
+
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>IMAGE</th>
+                                <th>DESCRIPTION</th>
+                                <th>DATE CREATED</th>
+                                <th>DATE UPLOAT</th>
+
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach( $all_category as $categorys )
                             <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Idrawfast prototype design prototype design prototype design prototype design prototype design</td>
-                                <td><span class="text-ellipsis">{item.PrHelpText1}</span></td>
-                                <td><span class="text-ellipsis">{item.PrHelpText1}</span></td>
+
+                                <td>{{$categorys->id }}</td>
+                                <td><span class="text-ellipsis">{{$categorys->name}}</span></td>
+                                <td><span class="text-ellipsis"><img height="200px" width="200px" src="source/image/product/{{$categorys->image }}" alt=""></span></td>
+                                <td><span class="text-ellipsis">{{$categorys->description }}</span></td>
+                                <td><span class="text-ellipsis">{{$categorys->created_at }}</span></td>
+                                <td><span class="text-ellipsis">{{$categorys->updated_at }}</span></td>
                                 <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
+                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Formasa</td>
-                                <td>8c</td>
-                                <td>Jul 22, 2013</td>
                                 <td>
-                                    <a href="" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Avatar system</td>
-                                <td>15c</td>
-                                <td>Jul 15, 2013</td>
+                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
+
                                 <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
                             </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Throwdown</td>
-                                <td>4c</td>
-                                <td>Jul 11, 2013</td>
-                                <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Idrawfast</td>
-                                <td>4c</td>
-                                <td>Jul 7, 2013</td>
-                                <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Formasa</td>
-                                <td>8c</td>
-                                <td>Jul 3, 2013</td>
-                                <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Avatar system</td>
-                                <td>15c</td>
-                                <td>Jul 2, 2013</td>
-                                <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                                <td>Videodown</td>
-                                <td>4c</td>
-                                <td>Jul 1, 2013</td>
-                                <td>
-                                    <a href="" class="active" ui-toggle-class=""><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
-                                </td>
-                            </tr>
+                            @endforeach
+
+
+
                         </tbody>
                     </table>
                 </div>
@@ -123,17 +73,10 @@
                     <div class="row">
 
                         <div class="col-sm-5 text-center">
-                            <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+                            <small class="text-muted inline m-t-sm m-b-sm">tổng số danh mục sản phẩm ({{count($all_category)}})</small>
                         </div>
                         <div class="col-sm-7 text-right text-center-xs">
-                            <ul class="pagination pagination-sm m-t-none m-b-none">
-                                <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
-                                <li><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
-                                <li><a href="">4</a></li>
-                                <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
-                            </ul>
+                            {{$all_category->links()}}
                         </div>
                     </div>
                 </footer>
@@ -141,11 +84,7 @@
         </div>
     </section>
     <!-- footer -->
-    <div class="footer">
-        <div class="wthree-copyright">
-            <p>© 2017 Visitors. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-        </div>
-    </div>
+
     <!-- / footer -->
 </section>
 @endsection
