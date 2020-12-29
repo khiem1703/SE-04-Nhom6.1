@@ -16,7 +16,7 @@
      <div class="container">
          <div id="content">
              <div class="our-history">
-                 <h2 class="text-center wow fadeInDown">Our History</h2>
+                 <h2 class="text-center wow fadeInDown">Lịch sử phát triển</h2>
                  <div class="space35">&nbsp;</div>
 
                  <div class="history-slider">
@@ -90,11 +90,10 @@
                                      <img src="source/assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Chúng tôi đã đạt được 5000 lượt follow trên trang Fanpage </h5>
+                                     <h5 class="other-title">Chúng tôi đã đạt được 5000 lượt follow trên trang Fanpage</h5>
                                      
                                      <div class="space20">&nbsp;</div>
-                                     <p>
-                                        Đi cùng cuộc cách mạng công nghiệp 4.0, cửa hàng chúng tôi cũng đã áp dụng công nghệ vào
+                                     <p>Đi cùng cuộc cách mạng công nghiệp 4.0, cửa hàng chúng tôi cũng đã áp dụng công nghệ vào
                                         để có thể lắng nghe những phản hồi của thực khách, cũng đồng thời đưa thông tin của sản phẩm đến với thực 
                                         khách nhanh hơn. Qua một thời gian sử dụng Fanpage, cửa hàng đã nhận được 5000 lượt follow trên trang, đó cũng 
                                         là sự phản ảnh tốt nhất đến với cửa hàng chúng tôi. Qua đó làm động lực cho chúng tôi ngày càng hoàn thiện hơn.
@@ -102,50 +101,45 @@
                                  </div>
                              </div>
                          </div>
-                         
+                     </div>
+                 </div>
+             </div>
 
              <div class="space50">&nbsp;</div>
              <hr />
              <div class="space50">&nbsp;</div>
-             <h2 class="text-center wow fadeInDown">Our Passion for What We Do Transfers Into Our Services</h2>
+             <h2 class="text-center wow fadeInDown">Niềm đam mê của chúng tôi đối với những gì chúng tôi làm chuyển thành các dịch vụ của chúng tôi</h2>
              <div class="space20">&nbsp;</div>
-             <p class="text-center wow fadeInLeft">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 nisi ut aliquip ex ea commodo consequat.<br /> Duis aute irure dolor in reprehenderit in voluptate
-                 velit esse cillum dolore eu fugiat nulla pariatur. </p>
+             <p class="text-center wow fadeInLeft">Mang đến những chiếc bánh tươi ngon nhất đến với khách hành<br /> 
+             Phục vụ khách là niềm vinh dự của chúng tôi </p>
              <div class="space35">&nbsp;</div>
 
              <div class="row">
                  <div class="col-sm-2 col-sm-push-2">
                      <div class="beta-counter">
                          <p class="beta-counter-icon"><i class="fa fa-user"></i></p>
-                         <p class="beta-counter-value timer numbers" data-to="19855" data-speed="2000">19855</p>
-                         <p class="beta-counter-title">Clients Satisfied</p>
+                         <p class="beta-counter-value timer numbers" data-to="19855" data-speed="2000">35.555</p>
+                         <p class="beta-counter-title">Khách Hàng</p>
                      </div>
                  </div>
 
                  <div class="col-sm-2 col-sm-push-2">
                      <div class="beta-counter">
                          <p class="beta-counter-icon"><i class="fa fa-picture-o"></i></p>
-                         <p class="beta-counter-value timer numbers" data-to="3568" data-speed="2000">3568</p>
-                         <p class="beta-counter-title">Amazing Works</p>
+                         <p class="beta-counter-value timer numbers" data-to="3568" data-speed="2000">50.000</p>
+                         <p class="beta-counter-title">Sản Phẩm</p>
                      </div>
                  </div>
 
                  <div class="col-sm-2 col-sm-push-2">
                      <div class="beta-counter">
                          <p class="beta-counter-icon"><i class="fa fa-clock-o"></i></p>
-                         <p class="beta-counter-value timer numbers" data-to="258934" data-speed="2000">258934</p>
-                         <p class="beta-counter-title">Support Hours</p>
+                         <p class="beta-counter-value timer numbers" data-to="258934" data-speed="2000">258.934</p>
+                         <p class="beta-counter-title">Thời gian làm việc</p>
                      </div>
                  </div>
 
-                 <div class="col-sm-2 col-sm-push-2">
-                     <div class="beta-counter">
-                         <p class="beta-counter-icon"><i class="fa fa-pencil"></i></p>
-                         <p class="beta-counter-value timer numbers" data-to="150" data-speed="2000">150</p>
-                         <p class="beta-counter-title">New Projects</p>
-                     </div>
-                 </div>
+                 
              </div> <!-- .beta-counter block end -->
 
              <div class="space50">&nbsp;</div>
