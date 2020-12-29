@@ -102,9 +102,11 @@
                         <thead>
                             <tr>
                                 <th>S.NO</th>
-                                <th>PRODUCT</th>
-                                <th>STATUS</th>
-                                <th>PROGRESS</th>
+                                <th>PRODUCT NAME</th>
+                                <th>unit price</th>
+                                <th>promotion price</th>
+                                <th>IMAGE</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -117,27 +119,37 @@
                                     {{$product->promotion_price }}
                                 </td>
                                 <td>
-                                    {{$product->image }}
+                                    <img height="40px" width="40px" src="source/image/product/{{$product->image }}" alt="">
                                 </td>
-                                <td>
-                                    {{$product->new }}
-                                </td>
-                                <td>
-                                    {{$product->created_at }}
-                                </td>
-                                <td>
-                                    {{$product->promotion_price }}
-                                </td>
+
 
 
 
                             </tr>
                             @endforeach
+                            <!-- <tr>
 
+                            </tr> -->
                         </tbody>
                     </table>
+
                 </div>
+
             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <!-- <p>Tổng số sản phẩn {{count($products)}}</p> -->
+                    </div>
+                    <div class="col-sm-5" style="margin-top: 20px">
+                        <samp> {{$products->links()}}</samp>
+                    </div>
+
+                </div>
+
+            </div>
+
 
             <div class="clearfix"> </div>
         </div>
