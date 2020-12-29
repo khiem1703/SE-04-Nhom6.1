@@ -110,3 +110,8 @@ Route::post('upda-category', [
 
 Route::get('delete-category', 'CategoryProduct@get_delete_category');
 
+// product
+Route::get('admin-all-products', [
+	'as' => 'all-products',
+	'uses' => 'AdminProduct@get_products'
+]);
