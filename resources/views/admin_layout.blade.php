@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span>Data Tables</span>
                             </a>
                             <ul class="sub">
-                                <li><a href="basic_table.html">Categorys</a></li>
+                                <li><a href="{{URL::to('/all-category-product')}}">Categorys</a></li>
                                 <li><a href="responsive_table.html">Products</a></li>
                                 <li><a href="responsive_table.html">Users</a></li>
                                 <li><a href="responsive_table.html">Carts</a></li>

@@ -44,6 +44,7 @@
     <script src="source/assets/dest/js/wow.min.js"></script>
     <!-- fb -->
     <!-- Load Facebook SDK for JavaScript -->
+    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function() {
@@ -64,8 +65,13 @@
     </script>
 
     <!-- Your Chat Plugin code -->
-    <div  class="fb-customerchat" attribution=setup_tool page_id="110772597472841" theme_color="#13cf13" logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+    <div class="fb-customerchat" attribution=setup_tool page_id="110772597472841" theme_color="#13cf13" logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
     </div>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110772597472841" theme_color="#13cf13" logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+    </div>
+
     <!--customjs-->
     <script src="source/assets/dest/js/custom2.js"></script>
     <script>
