@@ -22,19 +22,13 @@
                  <div class="history-slider">
                      <div class="history-navigation">
                          <a data-slide-index="0" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2003</span></a>
+                                 class="auto-center">2017</span></a>
                          <a data-slide-index="1" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2004</span></a>
+                                 class="auto-center">2018</span></a>
                          <a data-slide-index="2" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2005</span></a>
+                                 class="auto-center">2019</span></a>
                          <a data-slide-index="3" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2007</span></a>
-                         <a data-slide-index="4" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2009</span></a>
-                         <a data-slide-index="5" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2011</span></a>
-                         <a data-slide-index="6" href="blog_with_2sidebars_type_e.html" class="circle"><span
-                                 class="auto-center">2014</span></a>
+                                 class="auto-center">2020</span></a>
                      </div>
 
                      <div class="history-slides">
@@ -44,21 +38,16 @@
                                      <img src="source/assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Birth.</h5>
+                                     <h5 class="other-title">Ngày khai trương cửa hàng.</h5>
                                      <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
+                                         số 336, đường Nguyễn Trãi, phường Thanh Xuân Trung<br />
+                                         quận Thanh Xuân, Hà Nội<br />
                                      </p>
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>Ngày 04/01/2017 cửa hàng bánh ngọt Barkker's Alley Cake được khai trương dưới sự cố gắng 
+                                     cùng nhau của năm anh chàng đẹp trai có niềm đam mê với bánh ngọt. Cửa hàng với một tiêu chí là 
+                                     mang những chiếc bánh tươi ngon nhất để mang đến niềm vui cho từng khách hàng. Với một không gian trang trí theo 
+                                     phong cách cổ điển, với mong muốn đưa thực khách quay ngược lại quá khứ, là điểm đến để mọi người cùng nhau chuyện trò.
                                      </p>
                                  </div>
                              </div>
@@ -69,21 +58,12 @@
                                      <img src="assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Web Design</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
+                                     <h5 class="other-title">Đã đạt được 10.000 sản phẩm bán ra</h5>
+                                     
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>Sau 365 ngày dưới sự kiên trì, tận tâm của chúng tôi và cùng với sự tin tưởng, yêu mến của từng thực khách
+                                     ở mọi độ tuổi, chúng tôi đã phục vụ đến thực khách 10.000 chiếc bánh tươi ngon. Đó là động lực to lớn với chúng tôi
+                                     tiếp tục theo đuổi đam mê cùng với bành ngọt.
                                      </p>
                                  </div>
                              </div>
@@ -94,21 +74,12 @@
                                      <img src="assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Web Development</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
+                                     <h5 class="other-title">Mở thêm mảng pha chế đồ uống</h5>
+                                     
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>Nhờ những phản hồi của các thực khách đến cửa hàng, nên vào ngày 04/01/2019 chúng tôi có bán thêm các đồ uống đi kèm, 
+                                     mong muốn làm trọn vẹn thêm hương vị của những chiếc bánh đến với bữa ăn của thực khách. Với những thức uống được dày công xây dựng,
+                                     được lựa chọn cho phù hợp với từng chiếc bánh, từng sở thích của từng thực khách.
                                      </p>
                                  </div>
                              </div>
@@ -119,103 +90,19 @@
                                      <img src="source/assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Photoshop</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
+                                     <h5 class="other-title">Chúng tôi đã đạt được 5000 lượt follow trên trang Fanpage </h5>
+                                     
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>
+                                        Đi cùng cuộc cách mạng công nghiệp 4.0, cửa hàng chúng tôi cũng đã áp dụng công nghệ vào
+                                        để có thể lắng nghe những phản hồi của thực khách, cũng đồng thời đưa thông tin của sản phẩm đến với thực 
+                                        khách nhanh hơn. Qua một thời gian sử dụng Fanpage, cửa hàng đã nhận được 5000 lượt follow trên trang, đó cũng 
+                                        là sự phản ảnh tốt nhất đến với cửa hàng chúng tôi. Qua đó làm động lực cho chúng tôi ngày càng hoàn thiện hơn.
                                      </p>
                                  </div>
                              </div>
                          </div>
-                         <div>
-                             <div class="row">
-                                 <div class="col-sm-5">
-                                     <img src="source/assets/dest/images/history.jpg" alt="">
-                                 </div>
-                                 <div class="col-sm-7">
-                                     <h5 class="other-title">Skill</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
-                                     <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div>
-                             <div class="row">
-                                 <div class="col-sm-5">
-                                     <img src="source/assets/dest/images/history.jpg" alt="">
-                                 </div>
-                                 <div class="col-sm-7">
-                                     <h5 class="other-title">Project.</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
-                                     <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div>
-                             <div class="row">
-                                 <div class="col-sm-5">
-                                     <img src="source/assets/dest/images/history.jpg" alt="">
-                                 </div>
-                                 <div class="col-sm-7">
-                                     <h5 class="other-title">Coffe</h5>
-                                     <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
-                                     </p>
-                                     <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
+                         
 
              <div class="space50">&nbsp;</div>
              <hr />
