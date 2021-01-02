@@ -115,3 +115,8 @@ Route::get('admin-all-products', [
 	'as' => 'all-products',
 	'uses' => 'AdminProduct@get_products'
 ]);
+
+Route::get('test', [
+	'as' => 'a',
+	'uses' => 'AdminProduct@gettest'
+]);

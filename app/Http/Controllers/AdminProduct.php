@@ -10,4 +10,8 @@ class AdminProduct extends Controller
     {
         return view('admin.admin_product');
     }
+    public function gettest()
+    {
+        return view('admin.admin_bills');
+    }
 }
