@@ -108,8 +108,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </a>
                             <ul class="sub">
                                 <li><a href="{{URL::to('/all-category-product')}}">Categorys</a></li>
-                                <li><a href="responsive_table.html">Products</a></li>
-                                <li><a href="responsive_table.html">Users</a></li>
+                                <li><a href="{{URL::to('/admin-all-products')}}">Products</a></li>
+                                <li><a href="{{URL::to('/admin-customers')}}">Users</a></li>
                                 <li><a href="responsive_table.html">Carts</a></li>
 
                             </ul>

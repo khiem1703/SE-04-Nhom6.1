@@ -5,7 +5,7 @@
         <div class="table-agile-info">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Basic table
+                    Products table
                 </div>
                 <div>
                     <table class="table" ui-jq="footable" ui-options='{
@@ -31,70 +31,31 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach( $all_products as $product)
                             <tr data-expanded="true">
-                                <td>1</td>
-                                <td>Dennise</td>
-                                <td>Fuhrman</td>
-                                <td>High School History Teacher</td>
+                                <td>{{$product->id}}</td>
 
-                                <td>July 25th 1960</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Elodia</td>
-                                <td>Weisz</td>
-                                <td>Wallpaperer Helper</td>
+                                <td>{{$product->name}}</td>
 
-                                <td>March 30th 1982</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Raeann</td>
-                                <td>Haner</td>
-                                <td>Internal Medicine Nurse Practitioner</td>
+                                <td><span class="text-ellipsis"><img height="200px" width="200px" src="source/image/product/{{$product->image }}" alt=""></span></td>
+                                <td>{{$product->description }}</td>
+                                <td>{{$product->new }}</td>
+                                <td>{{$product->created_at }}</td>
+                                <td>{{$product->updated_at }}</td>
 
-                                <td>February 26th 1966</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Junie</td>
-                                <td>Landa</td>
-                                <td>Offbearer</td>
 
-                                <td>March 29th 1966</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Solomon</td>
-                                <td>Bittinger</td>
-                                <td>Roller Skater</td>
+                                <td>
+                                    <a href="#" class="active" ui-toggle-class=""><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="active" ui-toggle-class=""><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </a>
 
-                                <td>September 22nd 1964</td>
+                                <td>
                             </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Bar</td>
-                                <td>Lewis</td>
-                                <td>Clown</td>
+                            @endforeach
 
-                                <td>August 4th 1991</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Usha</td>
-                                <td>Leak</td>
-                                <td>Ships Electronic Warfare Officer</td>
-
-                                <td>November 20th 1979</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Lorriane</td>
-                                <td>Cooke</td>
-                                <td>Technical Services Librarian</td>
-
-                                <td>April 7th 1969</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -103,9 +64,7 @@
     </section>
     <!-- footer -->
     <div class="footer">
-        <div class="wthree-copyright">
-            <p>© 2017 Visitors. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-        </div>
+        
     </div>
     <!-- / footer -->
 </section>
