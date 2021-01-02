@@ -110,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="{{URL::to('/all-category-product')}}">Categorys</a></li>
                                 <li><a href="{{URL::to('/admin-all-products')}}">Products</a></li>
                                 <li><a href="{{URL::to('/admin-customers')}}">Users</a></li>
-                                <li><a href="responsive_table.html">Carts</a></li>
+                                <li><a href="{{URL::to('/admin-bills')}}">Carts</a></li>
 
                             </ul>
                         </li>
@@ -147,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </ul>
                         </li>
                         <li>
-                            <a href="fontawesome.html">
+                            <a href="{{URL::to('/admin-bills')}}">
                                 <i class="fa fa-bullhorn"></i>
                                 <span>Carts </span>
                             </a>

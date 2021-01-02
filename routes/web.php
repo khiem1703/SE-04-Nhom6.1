@@ -125,4 +125,8 @@ Route::get('admin-bills', [
 	'as' => 'admin-bills',
 	'uses' => 'AdminBills@getAll'
 ]);
-
+// chitiet_customer
+Route::get('admin-infoCustomer', [
+	'as' => 'chitiet_customer',
+	'uses' => 'AdminBills@chitiet_customer'
+]);

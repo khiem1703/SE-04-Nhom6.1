@@ -14,4 +14,7 @@ class Customor extends Model
 
         return $this->hasMany('App\Bill', 'id_customer', 'id');
     }
+    // public function billsOfCustomer(){
+    //     return $this ->hasMany('')
+    // }
 }
