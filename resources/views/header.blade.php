@@ -11,11 +11,11 @@
                  <ul class="top-details menu-beta l-inline">
                      @if(Auth::check())
                      <li><a href="#"><i class="fa fa-user"></i>Hello my friend {{Auth::user()->full_name}}</a></li>
-                     <li><a href="{{route('logout')}}"><i class="fa fa-user"></i>Log out</a></li>
+                     <li><a href="{{route('logout')}}"><i class="fa fa-user"></i>Đăng xuất</a></li>
 
                      @else
-                     <li><a href="{{route('signin')}}">registration</a></li>
-                     <li><a href="{{route('login')}}">log in</a></li>
+                     <li><a href="{{route('signin')}}">Đăng Ký</a></li>
+                     <li><a href="http://localhost/SE-04-Nhom6.1/public/dang-nhap">Đăng nhập</a></li>
                      @endif
                  </ul>
              </div>

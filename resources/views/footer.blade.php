@@ -4,15 +4,15 @@
           
             <div class="col-sm-8">
                 <div class="widget">
-                    <h4 class="widget-title">Information</h4>
+                    <h4 class="widget-title">Thông tin tiệm bánh</h4>
                     <div>
                         <ul>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Web Design</a></li>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Web development</a></li>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Marketing</a></li>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Tips</a></li>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Resources</a></li>
-                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Illustrations</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Người chịu trách nhiệm</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Trần Bá Khiêm</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Đỗ Văn Ngọc</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Ngô Minh thiên</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Nguyễn Trung Thành</a></li>
+                            <li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Trần Ngọc Ánh</a></li>
                         </ul>
                     </div>
                 </div>
@@ -20,12 +20,16 @@
             <div class="col-sm-4">
                 <div class="col-sm-10">
                     <div class="widget">
-                        <h4 class="widget-title">Contact Us</h4>
+                        <h4 class="widget-title">Liên hệ với chúng tôi</h4>
                         <div>
                             <div class="contact-info">
                                 <i class="fa fa-map-marker"></i>
-                                <p>30 South Park Avenue San Francisco, CA 94108 Phone: +78 123 456 78</p>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit asnatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+                                <p>Địa chỉ Đại học khoa học tự nhiên hà nội - hanoi university of natural science</p>
+                                <p>email liên lạc hỗ trợ :hotrokhachhangcake_foodhanoi@gmail.com</p>
+                                <p>số điện thoại liên lạc hỗ trợ :19001001</p>
+                                <p>Chúng tôi tiếp nhận mọi hình thức donate hỗ trợ hay đầu tư</p>
+
+
                             </div>
                         </div>
                     </div>
