@@ -16,7 +16,7 @@
      <div class="container">
          <div id="content">
              <div class="our-history">
-                 <h2 class="text-center wow fadeInDown">Our History</h2>
+                 <h2 class="text-center wow fadeInDown">Lịch sử </h2>
                  <div class="space35">&nbsp;</div>
 
                  <div class="history-slider">
@@ -34,21 +34,16 @@
                                      <img src="source/assets/dest/images/history.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Birth.</h5>
+                                     <h5 class="other-title">Khởi nguồn</h5>
                                      <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
+                                         BaHa-VietNam,<br />
+                                         154-65 nguyễn ngọc thạch<br />
+                                         Hanoi
                                      </p>
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>
+                                         Với ý tưởng thực hiện một cơ sở bán bánh , chúng tôi những người trẻ đã cùng nhau
+                                         tạo nên một thương hiệu bánh cho riêng mình
                                      </p>
                                  </div>
                              </div>
@@ -59,21 +54,16 @@
                                      <img src="source/assets/dest/images/vision.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Web Design</h5>
+                                     <h5 class="other-title">2019-phát triển</h5>
                                      <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
+                                         BaHa-VietNam,<br />
+                                         154-65 nguyễn ngọc thạch<br />
+                                         Hanoi
                                      </p>
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>
+                                         Có nhưng khó khắn ban đầu , nhưng chúng tôi đã vượt qua
+                                         Hiện tại đã có 3 cơ sở đặt tại khu vực hà nội -hà nam
                                      </p>
                                  </div>
                              </div>
@@ -84,21 +74,16 @@
                                      <img src="source/assets/dest/images/vision.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
-                                     <h5 class="other-title">Web Development</h5>
+                                     <h5 class="other-title">2020-hiện tại</h5>
                                      <p>
-                                         Suite 127 / 267 – 277 Brussel St,<br />
-                                         62 Croydon, NYC<br />
-                                         New York
+                                         BaHa-VietNam,<br />
+                                         154-65 nguyễn ngọc thạch<br />
+                                         Hanoi
                                      </p>
                                      <div class="space20">&nbsp;</div>
-                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                                         quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                         dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                         nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                                         ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                         voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+                                     <p>Hiện tại chúng tôi muốn mở rộng kinh doanh sang các địa phương khác 
+                                        .Chúng tôi đã chuyển sang công ty cổ phần ,mong các đơn vị tới hợp tác và 
+                                        liên hệ
                                      </p>
                                  </div>
                              </div>
@@ -257,9 +242,9 @@
 
              <h2 class="text-center wow fadeInDownwow fadeInDown">Our Amaizing Team</h2>
              <div class="space20">&nbsp;</div>
-             
+
              <div class="space20">&nbsp;</div>
-             
+
              <div class="space60">&nbsp;</div>
              <h5 class="text-center other-title wow fadeInDown">The Best of Professionals</h5>
              <p class="text-center wow fadeInUp">Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed
