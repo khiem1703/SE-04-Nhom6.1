@@ -15,7 +15,7 @@
 
                      @else
                      <li><a href="{{route('signin')}}">Đăng Ký</a></li>
-                     <li><a href="http://localhost/SE-04-Nhom6.1/public/dang-nhap">Đăng nhập</a></li>
+                     <li><a href="http://cakestore.com/SE-04-Nhom6.1/public/dang-nhap">Đăng nhập</a></li>
                      @endif
                  </ul>
              </div>
