@@ -35,7 +35,7 @@
                          <div>
                              <div class="row">
                                  <div class="col-sm-5">
-                                     <img src="source/assets/dest/images/2017.jpg" alt="">
+                                     <img style="width: 620px; height: 400px" src="source/assets/dest/images/2017.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
                                      <h5 class="other-title">Ngày khai trương cửa hàng.</h5>
@@ -55,7 +55,7 @@
                          <div>
                              <div class="row">
                                  <div class="col-sm-5">
-                                     <img src="assets/dest/images/2018.jpg" alt="">
+                                     <img style="width: 620px; height: 400px" src="source/assets/dest/images/2018.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
                                      <h5 class="other-title">Đã đạt được 10.000 sản phẩm bán ra</h5>
@@ -71,7 +71,7 @@
                          <div>
                              <div class="row">
                                  <div class="col-sm-5">
-                                     <img src="assets/dest/images/2020.jpg" alt="">
+                                     <img style="width: 620px; height: 400px" src="source/assets/dest/images/2020.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
                                      <h5 class="other-title">Mở thêm mảng pha chế đồ uống</h5>
@@ -87,7 +87,7 @@
                          <div>
                              <div class="row">
                                  <div class="col-sm-5">
-                                     <img src="source/assets/dest/images/2019.jpg" alt="">
+                                     <img style="width: 620px; height: 400px" src="source/assets/dest/images/2019.jpg" alt="">
                                  </div>
                                  <div class="col-sm-7">
                                      <h5 class="other-title">Chúng tôi đã đạt được 5000 lượt follow trên trang Fanpage</h5>
