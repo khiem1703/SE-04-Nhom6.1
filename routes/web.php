@@ -116,7 +116,17 @@ Route::get('admin-all-products', [
 	'uses' => 'AdminProduct@get_products'
 ]);
 
-Route::get('test', [
+Route::get('admin-customers', [
 	'as' => 'a',
-	'uses' => 'AdminProduct@gettest'
+	'uses' => 'AdminCustomers@getAll'
+]);
+
+Route::get('admin-bills', [
+	'as' => 'admin-bills',
+	'uses' => 'AdminBills@getAll'
+]);
+// chitiet_customer
+Route::get('admin-infoCustomer', [
+	'as' => 'chitiet_customer',
+	'uses' => 'AdminBills@chitiet_customer'
 ]);
